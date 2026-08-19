@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariachi Voz de México | Música mariachi en vivo para eventos</title>
+  <meta name="description" content="Mariachi Voz de México lleva música mexicana en vivo, vestimenta tradicional y energía festiva a bodas, cumpleaños, serenatas y todo tipo de eventos especiales.">
+  <meta name="keywords" content="mariachi para eventos, música mariachi en vivo, mariachi para bodas, mariachi para cumpleaños, serenatas, mariachi tradicional mexicano">
+  <meta property="og:title" content="Mariachi Voz de México | Música mariachi en vivo para eventos">
+  <meta property="og:description" content="Actuaciones de mariachi auténticas para crear momentos memorables en bodas, cumpleaños, serenatas y celebraciones.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/mariachi-presentacion-jardin.jpeg">
+  <link rel="icon" type="image/svg+xml" href="imagenes/logo-mariachi-voz-de-mexico.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <img src="imagenes/logo-mariachi-voz-de-mexico.svg" alt="" class="ld-mark">
+    <div class="ld-brand">
+      <p class="ld-name">Mariachi Voz de México</p>
+      <p class="ld-tag">Tradición que se escucha y se siente</p>
+    </div>
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Preparando la serenata</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="Mariachi Voz de México">
+      <img src="imagenes/logo-mariachi-voz-de-mexico.svg" alt="" class="logo-img">
+      <div class="logo-word">MARIACHI <em>VOZ DE MÉXICO</em></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#flotilla">Repertorio</a></li>
+      <li><a href="#why">Ventajas</a></li>
+      <li><a href="#contact" class="nav-cta">Solicitar Fecha</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#services">Servicios</a>
+  <a href="#flotilla">Repertorio</a>
+  <a href="#why">Ventajas</a>
+  <a href="#contact">Solicitar Fecha</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">Música mariachi en vivo para momentos inolvidables</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Que tu evento</span></span>
+        <span class="h1-line"><span class="h1-inner">suene a México</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner"><span class="accent-cycle" id="accentCycle">en grande</span></span></span>
+      </h1>
+      <p class="hero-p">
+        Mariachi Voz de México lleva la tradición, la alegría y la fuerza de la música mexicana a bodas, cumpleaños, serenatas, fiestas familiares y celebraciones que merecen sentirse únicas.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">
+          Solicitar presentación
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#galeria" class="btn-secondary">Ver galería</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Cualidades principales">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col">
+          <span class="stat-val">En vivo</span>
+          <span class="stat-lbl">Interpretación auténtica</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Bodas</span>
+          <span class="stat-lbl">Y celebraciones privadas</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Eventos</span>
+          <span class="stat-lbl">Todo tipo de celebración</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Tradición</span>
+          <span class="stat-lbl">Vestimenta mexicana</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-beam"></div>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <svg width="22" height="34" viewBox="0 0 22 34" fill="none">
+      <rect x="1" y="1" width="20" height="32" rx="10" stroke="rgba(255,255,255,.35)" stroke-width="1.5"/>
+      <circle class="mouse-dot" cx="11" cy="9" r="3" fill="rgba(255,255,255,.72)"/>
+    </svg>
+    <span class="scroll-label">Scroll</span>
+  </div>
+  <div class="hero-badge" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Mariachi para eventos y celebraciones</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Ocasiones que atendemos">
+  <div class="wrap">
+    <div class="trust-row">
+      <p class="trust-label">Ideal para</p>
+      <div class="trust-chips">
+        <span class="trust-chip">Bodas</span>
+        <span class="trust-chip">Cumpleaños</span>
+        <span class="trust-chip">Serenatas</span>
+        <span class="trust-chip">Todo tipo de eventos</span>
+        <span class="trust-chip">Fiestas familiares</span>
+        <span class="trust-chip">Celebraciones especiales</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2 class="heading">Música mariachi para darle carácter a cada momento</h2>
+      <p class="sub">Presentaciones diseñadas para acompañar celebraciones con emoción, tradición y un sonido que conecta de inmediato.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rev d1">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-icon ic-blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B63B6" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+          </svg>
+        </div>
+        <h3>Serenatas y celebraciones</h3>
+        <p>El detalle perfecto para sorprender, emocionar y convertir una fecha especial en un recuerdo que se canta por años.</p>
+        <div class="svc-tags">
+          <span class="tag tag-b">Cumpleaños</span>
+          <span class="tag tag-b">Aniversarios</span>
+          <span class="tag tag-b">Reuniones familiares</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d2">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-icon ic-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A5163D" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/>
+          </svg>
+        </div>
+        <h3>Bodas y momentos solemnes</h3>
+        <p>Música con fuerza emocional para entradas, brindis, recepción o instantes clave donde la tradición debe sentirse impecable.</p>
+        <div class="svc-tags">
+          <span class="tag tag-g">Bodas</span>
+          <span class="tag tag-g">Recepciones</span>
+          <span class="tag tag-g">Momentos especiales</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d3">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-icon ic-slate">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C99A45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21h18"/>
+            <path d="M5 21V7l8-4v18"/>
+            <path d="M19 21V11l-6-4"/>
+            <path d="M9 9h1M9 13h1M9 17h1M16 13h1M16 17h1"/>
+          </svg>
+        </div>
+        <h3>Todo tipo de eventos</h3>
+        <p>Una experiencia musical auténtica para celebraciones grandes o íntimas que buscan alegría, tradición y un toque mexicano premium.</p>
+        <div class="svc-tags">
+          <span class="tag">Familiares</span>
+          <span class="tag">Sociales</span>
+          <span class="tag">Especiales</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FLOTILLA -->
+<section id="flotilla" class="section bg-white">
+  <div class="wrap">
+    <div class="prod-header">
+      <div>
+        <p class="eyebrow">Repertorio y momentos</p>
+        <h2 class="heading">Canciones para celebrar, emocionar y encender el ambiente</h2>
+      </div>
+      <a href="#contact" class="btn-outline rev">Solicitar fecha</a>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card rev d1">
+        <div class="prod-photo">
+          <img src="imagenes/mariachi-grupo-evento-noche.jpeg" alt="Mariachi Voz de México posando con instrumentos y traje tradicional en un evento nocturno" loading="lazy">
+        </div>
+        <h3>Entrada de impacto</h3>
+        <p>La presencia del grupo marca el inicio de una celebración con carácter mexicano desde el primer acorde.</p>
+        <span class="prod-pill">Eventos especiales</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="prod-photo">
+          <img src="imagenes/mariachi-presentacion-jardin.jpeg" alt="Mariachi Voz de México con instrumentos en una presentación al aire libre" loading="lazy">
+        </div>
+        <h3>Ambiente para convivir</h3>
+        <p>Interpretaciones pensadas para acompañar brindis, comidas, reuniones y momentos de cercanía con los invitados.</p>
+        <span class="prod-pill">Fiestas familiares</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="prod-photo">
+          <img src="imagenes/mariachi-catrinas-dia-muertos.jpeg" alt="Mariachi Voz de México caracterizado para una presentación temática de Día de Muertos" loading="lazy">
+        </div>
+        <h3>Presentaciones temáticas</h3>
+        <p>Una propuesta visual y musical capaz de adaptarse a celebraciones culturales, temporadas y conceptos especiales.</p>
+        <span class="prod-pill">Experiencias memorables</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="prod-photo">
+          <img src="imagenes/mariachi-bellas-artes.jpeg" alt="Mariachi Voz de México con traje tradicional frente al Palacio de Bellas Artes" loading="lazy">
+        </div>
+        <h3>Imagen profesional</h3>
+        <p>Vestimenta tradicional, presencia escénica y cuidado visual para que tu evento luzca tan bien como suena.</p>
+        <span class="prod-pill">Eventos y protocolo</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section bg-navy">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img
+            src="imagenes/mariachi-bellas-artes.jpeg"
+            alt="Mariachi Voz de México con instrumentos y vestimenta tradicional mexicana" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">México</p>
+          <p class="wib-l">En vivo, con presencia y tradición</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white">La diferencia está en cómo se siente la música</h2>
+        <p class="sub sub--white">Más que acompañamiento musical: una experiencia que eleva el ánimo, une a los invitados y le da identidad a tu celebración.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F1CF72" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18V5l12-2v13"/>
+                <circle cx="6" cy="18" r="3"/>
+                <circle cx="18" cy="16" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Calidad musical</h4>
+              <p>Interpretaciones cuidadas para que cada canción tenga fuerza, emoción y presencia frente a tus invitados.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F1CF72" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 21v-7"/>
+                <path d="M4 10V3"/>
+                <path d="M12 21v-9"/>
+                <path d="M12 8V3"/>
+                <path d="M20 21v-5"/>
+                <path d="M20 12V3"/>
+                <path d="M1 14h6"/>
+                <path d="M9 8h6"/>
+                <path d="M17 16h6"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Versatilidad para eventos</h4>
+              <p>Una presencia musical que funciona en celebraciones íntimas, fiestas llenas de energía y todo tipo de eventos.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F1CF72" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Imagen tradicional</h4>
+              <p>Vestimenta mexicana y presencia escénica para que la experiencia sea auténtica también en lo visual.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-w">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.78)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Atención directa</h4>
+              <p>Comparte tu fecha y tipo de evento para recibir orientación sobre la presentación que mejor encaja.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Cómo funciona</p>
+      <h2 class="heading">Contrata tu mariachi en 4 pasos</h2>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v">01</p>
+        <p class="num-l">Comparte fecha, horario, lugar y tipo de celebración</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v">02</p>
+        <p class="num-l">Define el momento que quieres musicalizar</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v">03</p>
+        <p class="num-l">Recibe orientación directa por WhatsApp o Facebook</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v">04</p>
+        <p class="num-l">Disfruta una presentación viva, elegante y festiva</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Galería</p>
+      <h2 class="heading heading--white">La tradición puesta en escena</h2>
+      <p class="brands-sub">Momentos reales del grupo en celebraciones, presentaciones y producciones visuales con identidad mexicana.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="imagenes/mariachi-bellas-artes.jpeg" alt="Mariachi Voz de México con traje tradicional frente al Palacio de Bellas Artes" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="imagenes/mariachi-presentacion-jardin.jpeg" alt="Grupo de mariachi posando con instrumentos en jardín para una presentación" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="imagenes/mariachi-catrinas-dia-muertos.jpeg" alt="Mariachi con caracterización de catrinas para presentación de Día de Muertos" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="imagenes/logo-referencia-mariachi-voz-de-mexico.jpeg" alt="Logotipo original de Mariachi Voz de México en composición dorada" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <p class="brands-note rev">Música mexicana para recuerdos que se quedan</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info rev from-l">
+        <p class="eyebrow">Contáctanos</p>
+        <h2 class="heading">Solicita disponibilidad para tu evento</h2>
+        <p class="sub" style="margin-bottom:36px">Cuéntanos qué estás celebrando, cuándo será y qué ambiente quieres lograr. Puedes escribir por WhatsApp o visitar su página de Facebook.</p>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A5163D" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">WhatsApp</p>
+            <p class="c-value"><a href="https://wa.me/525541767153" target="_blank" rel="noopener noreferrer">+52 55 4176 7153</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A5163D" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.5l.5-4H14V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Facebook</p>
+            <p class="c-value"><a href="https://www.facebook.com/share/1HvgFRqa6T/" target="_blank" rel="noopener noreferrer">Mariachi Voz de México</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A5163D" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Cobertura</p>
+            <p class="c-value">Eventos y celebraciones donde se requiera música mariachi en vivo</p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A5163D" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Estilo</p>
+            <p class="c-value">Música mexicana tradicional con energía festiva y presencia profesional</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicitar presentación</h3>
+          <p class="form-sub">Al enviar, se abrirá WhatsApp con tu solicitud lista para compartir.</p>
+          <form id="cForm" data-whatsapp-number="525541767153" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre completo *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Tu nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="fe">Empresa</label>
+                <input class="fi" type="text" id="fe" name="empresa" placeholder="Si aplica" autocomplete="organization">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="ft">Teléfono</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="Opcional" autocomplete="tel">
+              </div>
+              <div class="fg">
+                <label class="fl" for="fem">Correo electrónico</label>
+                <input class="fi" type="email" id="fem" name="email" placeholder="Opcional" autocomplete="email">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fo">Lugar del evento *</label>
+                <input class="fi" type="text" id="fo" name="lugar" placeholder="Ciudad, salón o domicilio" required>
+              </div>
+              <div class="fg">
+                <label class="fl" for="fd">Tipo de evento *</label>
+                <input class="fi" type="text" id="fd" name="evento" placeholder="Boda, cumpleaños, serenata..." required>
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="ffs">Fecha del evento *</label>
+                <input class="fi" type="date" id="ffs" name="fecha" required>
+              </div>
+              <div class="fg">
+                <label class="fl" for="ffr">Horario deseado</label>
+                <input class="fi" type="text" id="ffr" name="horario" placeholder="Ej. 8:00 pm">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fh">Momento musical *</label>
+                <input class="fi" type="text" id="fh" name="momento" placeholder="Serenata, entrada, recepción..." required>
+              </div>
+              <div class="fg">
+                <label class="fl" for="fs">Servicio de interés *</label>
+                <select class="fi" id="fs" name="tipo" required>
+                  <option value="">Seleccione una opción</option>
+                  <option value="Serenata">Serenata</option>
+                  <option value="Boda">Boda</option>
+                  <option value="Cumpleaños">Cumpleaños</option>
+                  <option value="Todo tipo de evento">Todo tipo de evento</option>
+                  <option value="Celebración familiar">Celebración familiar</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Comentarios adicionales</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="3" placeholder="Canciones, dinámica del evento o detalles importantes..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+              </svg>
+              Enviar solicitud por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <img src="imagenes/logo-mariachi-voz-de-mexico.svg" alt="" class="foot-logo-img">
+          <div class="logo-word">MARIACHI <em>VOZ DE MÉXICO</em></div>
+        </div>
+        <p class="foot-desc">Música mariachi en vivo para bodas, cumpleaños, serenatas y todo tipo de eventos especiales con tradición, energía y presencia mexicana.</p>
+      </div>
+      <div>
+        <p class="foot-col-title">Servicios</p>
+        <ul class="foot-links">
+          <li><a href="#services">Serenatas y celebraciones</a></li>
+          <li><a href="#services">Bodas y momentos solemnes</a></li>
+          <li><a href="#services">Todo tipo de eventos</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Experiencia</p>
+        <ul class="foot-links">
+          <li><a href="#why">Calidad musical</a></li>
+          <li><a href="#flotilla">Repertorio para eventos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#why">Ventajas</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="https://wa.me/525541767153" target="_blank" rel="noopener noreferrer">WhatsApp: +52 55 4176 7153</a></li>
+          <li><a href="https://www.facebook.com/share/1HvgFRqa6T/" target="_blank" rel="noopener noreferrer">Facebook oficial</a></li>
+          <li><a href="#contact">Solicitar presentación</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 <span>Mariachi Voz de México</span>. Todos los derechos reservados.</p>
+      <p>Música mexicana en vivo para eventos</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-float">
+  <span class="wa-tip">Cotiza por WhatsApp</span>
+  <a href="https://wa.me/525541767153"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="wa-btn"
+     aria-label="Contactar a Mariachi Voz de México por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
