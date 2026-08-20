@@ -275,6 +275,14 @@ textarea {
   flex: 0 0 auto;
 }
 
+.logo-img {
+  transition: filter .25s ease;
+}
+
+#nav.scrolled .logo-img {
+  filter: brightness(.55) contrast(1.2);
+}
+
 .logo-word {
   font-family: "Cinzel", Georgia, serif;
   font-weight: 800;
@@ -714,11 +722,16 @@ textarea {
 
 .about-img-main img,
 .why-img-main img,
-.prod-photo img,
 .brand-card-inner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.prod-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .about-accent,
@@ -935,7 +948,7 @@ textarea {
 }
 
 .prod-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .prod-card {
@@ -947,6 +960,9 @@ textarea {
   overflow: hidden;
   border-radius: 6px;
   background: var(--paper-warm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prod-card h3,
@@ -1077,6 +1093,20 @@ textarea {
 .brand-card-inner {
   aspect-ratio: 1 / 1.08;
   overflow: hidden;
+}
+
+.brand-card--logo .brand-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background: rgba(255, 255, 255, .04);
+}
+
+.brand-card--logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .brand-card img {
