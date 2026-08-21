@@ -624,9 +624,19 @@ textarea {
   50% { transform: translateY(10px); opacity: .35; }
 }
 
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.video-item {
+  width: min(100%, 380px);
+  text-align: center;
+}
+
 .video-wrap {
-  max-width: 480px;
-  margin: 0 auto;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -637,6 +647,13 @@ textarea {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.video-caption {
+  margin-top: 14px;
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 700;
+  color: var(--ink);
 }
 
 #trust {
