@@ -255,7 +255,7 @@ textarea {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 24px;
 }
 
@@ -471,6 +471,19 @@ textarea {
   display: flex;
   align-items: center;
   padding: 126px 0 184px;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.hero-logo-img {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 40px rgba(0, 0, 0, .4));
 }
 
 .hero-eyebrow {
@@ -733,7 +746,9 @@ textarea {
 
 .about-img-main img,
 .why-img-main img,
-.brand-card-inner img {
+.prod-photo img,
+.brand-card-inner img,
+.brand-card-inner video {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1407,9 +1422,8 @@ footer {
     padding: 12px 0;
   }
 
-  .logo-img {
-    width: 112px;
-    height: 56px;
+  .hero-logo-img {
+    width: 260px;
   }
 
   .logo-word {
