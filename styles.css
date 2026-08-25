@@ -269,10 +269,23 @@ textarea {
 
 .logo-img,
 .foot-logo-img {
-  width: 88px;
-  height: 44px;
   object-fit: contain;
   flex: 0 0 auto;
+}
+
+.foot-logo-img {
+  width: 88px;
+  height: 44px;
+}
+
+.logo-img {
+  width: 148px;
+  height: 74px;
+  transition: filter .25s ease;
+}
+
+#nav.scrolled .logo-img {
+  filter: brightness(.55) contrast(1.2);
 }
 
 .logo-word {
@@ -624,30 +637,36 @@ textarea {
   50% { transform: translateY(10px); opacity: .35; }
 }
 
-.hero-badge {
-  position: absolute;
-  right: 32px;
-  top: 118px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  max-width: 260px;
-  padding: 12px 14px;
-  border: 1px solid rgba(255, 250, 241, .22);
-  border-radius: var(--radius);
-  background: rgba(24, 18, 20, .34);
-  color: rgba(255, 250, 241, .8);
-  font-size: .86rem;
-  font-weight: 700;
-  backdrop-filter: blur(14px);
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
 }
 
-.hb-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 0 6px rgba(214, 167, 74, .15);
+.video-item {
+  width: min(100%, 380px);
+  text-align: center;
+}
+
+.video-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #000;
+}
+
+.video-wrap video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video-caption {
+  margin-top: 14px;
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 700;
+  color: var(--ink);
 }
 
 #trust {
@@ -732,7 +751,13 @@ textarea {
 .brand-card-inner video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.prod-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .about-accent,
@@ -949,7 +974,7 @@ textarea {
 }
 
 .prod-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .prod-card {
@@ -961,6 +986,9 @@ textarea {
   overflow: hidden;
   border-radius: 6px;
   background: var(--paper-warm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prod-card h3,
@@ -1091,6 +1119,20 @@ textarea {
 .brand-card-inner {
   aspect-ratio: 1 / 1.08;
   overflow: hidden;
+}
+
+.brand-card--logo .brand-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background: rgba(255, 255, 255, .04);
+}
+
+.brand-card--logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .brand-card img {
@@ -1444,8 +1486,7 @@ footer {
     border-bottom: 1px solid rgba(255, 250, 241, .14);
   }
 
-  .hero-scroll-cue,
-  .hero-badge {
+  .hero-scroll-cue {
     display: none;
   }
 
