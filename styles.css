@@ -493,7 +493,7 @@ textarea {
 .hero-h1 {
   margin: 16px 0 0;
   font-family: "Cinzel", Georgia, serif;
-  font-size: clamp(3.05rem, 8.3vw, 7.7rem);
+  font-size: clamp(2.4rem, 5.6vw, 5.2rem);
   line-height: .92;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -1449,7 +1449,7 @@ footer {
   }
 
   .hero-h1 {
-    font-size: clamp(2.45rem, 16vw, 4.1rem);
+    font-size: clamp(1.55rem, 7.8vw, 2.4rem);
   }
 
   .hero-p {
